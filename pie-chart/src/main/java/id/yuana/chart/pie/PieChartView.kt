@@ -67,7 +67,7 @@ class PieChartView @JvmOverloads constructor(
         val centerY = (measuredHeight / 2).toFloat()
         val radius = Math.min(centerX, centerY)
 
-        canvas!!.drawCircle(centerX, centerY, radius - 70, centerPaint)
+        canvas!!.drawCircle(centerX, centerY, radius - 20, centerPaint)
 
     }
 
