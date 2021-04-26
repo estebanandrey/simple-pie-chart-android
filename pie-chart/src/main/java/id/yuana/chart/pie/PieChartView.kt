@@ -83,6 +83,12 @@ class PieChartView @JvmOverloads constructor(
         invalidateAndRequestLayout()
     }
 
+    //To set color from literal String
+    fun setCenterColor(color: String) {
+        centerPaint.color = Color.parseColor(color)
+        invalidateAndRequestLayout()
+    }
+
     fun setSliceColor(colors: IntArray) {
         sliceColors = colors
         invalidateAndRequestLayout()
